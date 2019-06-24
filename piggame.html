@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	 <script src="scripts/script.js"></script> 
+	  <title>Pig Game</title>
+  </head>
+  <body>
+  <div class="play-area flex-container">
+	  <!--player one stuff====================-->
+      <div id="player-one" class="player" >
+          <div  class="player-name">Player 1</div>
+          <div id="player-score-1" class="score">0</div>
+		  <div id="player-roll-score-1" class="roll-score">0</div>
+	  </div>
+	  
+      <div class="dice-area flex-container">
+		    <button id="btn-roll" class="btn" onclick="rollOnClick()">ROLL</button>
+			<button id="btn-hold" class="btn" onclick="holdOnClick()">HOLD</button>
+   			<img id="dice" src="/resources/img/dice-1.png" alt="">
+    		<button id="btn-new-game" class="btn" onclick="startGame()">NEW GAME</button>
+	  </div>
+
+	  	  <!--player one stuff====================-->
+      <div id="player-two" class="player" >
+          <div id="player-two" class="player-name">Player 2</div>
+          <div id="player-score-2" class="score">
+              0
+		  </div>
+		  <div id="player-roll-score-2" class="roll-score">
+			  0
+			</div>
+      </div>
+
+  </div>
+
+  </body>
+</html>
